@@ -1,0 +1,38 @@
+{
+    "env": {
+        "node": true,
+        "es6": true
+    },
+    "extends": [
+        "airbnb-base",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:chai-friendly/recommended",
+        "plugin:mocha/recommended",
+        "plugin:chai-expect/recommended"
+    ],
+    "ignorePatterns": ["node_modules/", "mochawesome-report/"],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 11,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "@typescript-eslint",
+        "chai-expect",
+        "chai-friendly",
+        "mocha"
+    ],
+    "rules": {
+        "import/extensions": "off",
+        "import/no-unresolved": "off",
+        "no-underscore-dangle": ["error", { "allowAfterThis": true }],
+        "max-len": [2, {"code": 115, "tabWidth": 4, "ignoreUrls": true}],
+        "semi": "off",
+        "@typescript-eslint/semi": ["error"]
+    }
+}

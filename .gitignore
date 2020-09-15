@@ -1,0 +1,4 @@
+.vscode/
+mochawesome-report/
+node_modules/
+.env
